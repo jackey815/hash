@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>HEX/ASCII</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- Scripts -->
+  <script>
+    delete module.exports
+  </script>
+  <script src="../js/jquery-3.2.1.js"></script>
+  <script src="../js/hex.js" charset="utf-8"></script>
+
+</head>
+
+
+<body>
+  <div id="container" class="container-fluid">
+      <div class="pull-right">  
+          <input  class="back" type="button"  title="返回" value="返回"  onclick="location.href='../index.html'" />
+        </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+        <h4 class="hex-heading">明文</h4>
+        <textarea rows="2" id="text-input" class="form-control text-input" placeholder="Enter..."></textarea>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        </br>
+          <input class="button" type="button" value="加密" title="加密" id="hex_encode">
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <input class="button" type="button" value="解密" title="解密" id="hex_decode">
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h4 class="hex-heading">HEX</h4>
+        <textarea rows="1" id="hex-input" class="form-control text-input" placeholder="456e7465722e2e2e"></textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h4 class="hex-heading">ShellCode</h4>
+        <textarea rows="1" id="shellcode-input" class="form-control text-input" placeholder="\x45\x6e\x74\x65\x72\x2e\x2e\x2e"></textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h4 class="hex-heading">ASCII</h4>
+        <textarea rows="1" id="ascii-input" class="form-control text-input" placeholder="69 110 116 101 114 46 46 46"></textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h4 class="hex-heading">Quoted-printable</h4>
+        <textarea rows="1" id="quoted-input" class="form-control text-input" placeholder="=45=6e=74=65=72=2e=2e=2e"></textarea>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h4 class="hex-heading">Unicode编码</h4>
+        <textarea rows="1" id="unicode-input" class="form-control text-input" placeholder="&#x0045;&#x006e;&#x0074;&#x0065;&#x0072;&#x002e;&#x002e;&#x002e;"></textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h4 class="hex-heading">Escape编码</h4>
+        <textarea rows="1" id="escape-input" class="form-control text-input" placeholder="%u0045%u006e%u0074%u0065%u0072%u002e%u002e%u002e"></textarea>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

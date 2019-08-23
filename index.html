@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>CTF MISC</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/css/styles.css">
+
+    <!-- Scripts -->
+    <script>
+        delete module.exports
+    </script>
+    <script src="./js/jquery-3.2.1.js"></script>
+
+</head>
+
+<body>
+    <div class="box">
+        <div class="change-type">
+            <div class="type-right">
+                <p>
+                    <i class="el-icon-menu"></i>
+                    加解密工具
+                </p>
+            </div>
+            <div style="height:160px" class="type-left showListType" :class="showType == true ? 'showListType':''">
+                <ul>
+                    <li><a href="./static/hash.html">HASH</a><span></span></li>
+                    <li><a href="./static/hex.html">HEX/ASCII</a><span></span></li>
+                    <li><a href="./static/rc4.html">RC4</a><span></span></li>
+                    <li><a href="./static/base64.html">BASE64</a><span></span></li>
+                    <li><a href="./static/rabbit.html">Rabbit</a><span></span></li>
+                    <li><a href="./static/aes.html">AES</a><span></span></li>
+                    <li><a href="./static/des.html">DES</a><span></span></li>
+                    <li><a href="./static/xxencode.html">XXencode</a><span></span></li>
+                    <li><a href="./static/railfence.html">栅栏加密</a><span></span></li>
+                    <li><a href="./static/atbash.html">Atbash</a><span></span></li>
+                    <li><a href="./static/moose.html">摩斯编码</a><span></span></li>
+                    <li><a href="./static/rot13.html">ROT13</a><span></span></li>
+                    <li><a href="./static/caesar.html">凯撒密码</a><span></span></li>
+                    <li><a href="./static/affine.html">仿射密码</a><span></span></li>
+                    <!-- <li><a>培根密码</a><span></span></li>
+                    <li><a>维吉尼亚密码</a><span></span></li>
+                    <li><a>希尔密码</a><span></span></li>
+                    <li><a>HTML实体编码</a><span></span></li>
+                    <li><a>HTML实体编码</a><span></span></li>
+                    <li><a>HTML实体编码</a><span></span></li>
+                    <li><a>HTML实体编码</a><span></span></li> -->
+                </ul>
+            </div>
+
+            <!-- </div>
+            <div class="change-type">
+                <div class="type-right">
+                    <p>
+                        <i class="el-icon-menu"></i>
+                        RSA工具
+                    </p>
+                </div>
+                <div class="type-left showListType" :class="showType == true ? 'showListType':''">
+                    <ul>
+                        <li><a href="./static/rsa_basic.html">基本操作</a><span></span></li>
+                        <li><a href="./static/hex.html">HEX/ASCII</a><span></span></li>
+                        <li><a href="./static/rc4.html">RC4</a><span></span></li>
+                        <li><a>BASE64</a><span></span></li>
+                        <li><a href="./static/rabbit.html">Rabbit</a><span></span></li>
+                        <li><a href="./static/aes.html">AES</a><span></span></li>
+                        <li><a>DES</a><span></span></li>
+                        <li><a>URL</a><span></span></li>
+                        <li><a>XXencode</a><span></span></li>
+                    </ul>
+                </div> -->
+
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $('.type-left ul li').click(function () {
+                $(this).addClass('active').siblings('li').removeClass('active')
+            })
+        })
+    </script>
+</body>
+
+</html>

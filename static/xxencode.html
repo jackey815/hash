@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>XXencode</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- Scripts -->
+  <script>
+    delete module.exports
+  </script>
+  <script src="../js/jquery-3.2.1.js"></script>
+  <script src="../js/xxencode.js" charset="utf-8"></script>
+
+</head>
+
+
+<body>
+
+  <div id="container" class="container-fluid">
+  <div class="pull-right">  
+    <input  class="back" type="button"  title="返回" value="返回"  onclick="location.href='../index.html'" />
+  </div> 
+    <!-- Input row -->
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+        <h3 class="hash-heading">密文</h3>
+        <textarea rows="2" id="text-input" class="form-control text-input" placeholder=""></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      </br>
+        <input class="button" type="button" value="XXencode解码" title="XXencode解码" id="xxencode_encode">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+        <h3 class="hash-heading">明文</h3>
+        <textarea rows="2" id="text-output" class="form-control text-input" placeholder=""></textarea>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+
+</html>
